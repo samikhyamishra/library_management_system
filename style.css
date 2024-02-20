@@ -1,0 +1,412 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*--------------INDEX PAGE ---------------------*/
+
+html,
+body{
+    scroll-behavior: smooth;
+}
+
+body {     /* styling the body */
+    font-family: "Inconsolata", monospace;
+    font-size: larger;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(216, 216, 216);
+  }
+
+.wrapper{
+    height: 928px;           /*customise this part accordingly */
+    width: 1858px;
+    /* background-color: red;  */
+}
+
+ header{
+    height: 150px;
+    width: 1858px;
+    /* background-color: black;  */
+    background-image: linear-gradient(180deg, black, white); 
+    background-position: center;
+}
+
+section{
+    height: 658px;
+    width: 1858px;
+    background-image:url("requirements/sectionimg.jpg"); ;
+}
+
+footer{
+    height: 120px;
+    width: 1858px;
+    /* background-color: white; */
+    background-image: linear-gradient(180deg, white,black); 
+}
+
+.logo{
+    float: left;
+    padding-left: 50px;
+}
+
+.logo a{
+  text-decoration: none;
+}
+
+.logo h1{
+    padding-left: 50px;
+    padding-top: 1rem;
+    font-size: 80px;
+    font-weight: bolder;
+    color: white;
+    text-shadow:4px 4px 8px goldenrod;
+}
+
+/* .logo img {
+    padding-left: 50px;
+    padding-top: 10px;
+    height: 100px;
+    width: 100px ;
+} */
+
+nav{
+    float: right; 
+    word-spacing: 20px;
+    padding: 20px;
+    /* background-color: lavenderblush; */
+    /* border-bottom: 1px solid rgba(255,255,255,0.5); */
+}
+
+.nav_bar{
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+ .nav__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .link{
+    display: inline-block;
+  }
+  
+  .link a {
+    padding: 1.5rem 15px;
+    font-weight: bold;
+    font-size: 25px; 
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 2px teal;
+    transition: 0.3s;
+    word-spacing:normal ;
+  }
+  
+  .link a:hover {
+    color: white;
+    border: 5px solid black;
+    border-radius: 20px;
+    padding: 10px; 
+    font-size: 30px;
+    background-color: blueviolet;
+  }
+
+  .box{
+    height: 350px;
+    width: 450px;
+    border: 3px solid black;
+    box-shadow: 4px 4px 4px 4px lightseagreen;
+    border-radius: 2rem;
+    /* background-image: radial-gradient(black,cyan); */
+    background-image: linear-gradient(180deg, white, wheat);
+    margin: 90px auto;
+  }
+
+  .box h1{
+    text-align: center;
+    font-size: 2.5rem;
+    /* color: white; */
+    color: green;
+  }
+
+  .box img{
+    height:128px;
+    width:128px;
+    padding-top: 1rem;
+    padding-left: 10.5rem;
+  }
+
+   .footer__container {
+    border-top: 1px solid black;
+    text-align: center;
+    /* background-color: yellow; */
+  } 
+  
+  .footer__socials {
+    margin-bottom: 1rem; 
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .footer__socials span a {
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+   text-decoration: none;
+  }
+  
+  .footer__socials span a:hover {
+    color: red;
+  }
+
+  .footer__nav {
+    list-style: none; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 1px;
+    gap: 2rem;
+  }
+  
+  .footer__link a {
+    font-weight: 500px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .footer__link a:hover {
+    color: white;
+  }
+  
+  .footer__bar {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .footer__bar p{
+    font-size: 15px;
+    color: whitesmoke;
+    font-weight: bold;
+  }
+
+  .footer__bar a{
+    text-decoration: none;
+    color: wheat;
+  }
+ 
+  /* --------------------------LOGIN PAGE --------------------- */
+
+  .login_box{
+    height: 385px;
+    width: 450px;
+    margin: 90px auto;
+    text-align: center; 
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 4px solid black;
+    box-shadow: 5px 5px 5px lightseagreen;
+    border-radius: 2rem;
+    /* background-image: radial-gradient(black,cyan); */
+    background-image: linear-gradient(180deg, white, wheat);
+  }
+
+  .login_box h1{
+    padding-top: 1.5rem;
+    font-weight: bold;
+    /* color: white; */
+    color: green;
+    /* text-shadow:4px 4px 8px blue; */
+    font-size: 2rem;
+    text-decoration: underline;
+  }
+
+  input{
+    font-family: cursive;
+    text-align: center;
+    align-items: center;
+    height: 40px;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 10px; 
+    padding: 10px; 
+  }
+
+  button{
+    background-color: green;
+    border: #000;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+
+  button:hover{
+    box-shadow: 0 12px 16px 0 black,0 17px 50px 0 black;;
+  }
+
+  form a{
+    text-decoration: none;
+  }
+
+  /* -------------------New User Register Page------------------- */
+
+  .regstrn_box{
+    height: 750px;
+    width: 550px;
+    margin: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 2px solid black;
+    border-radius: 2rem;
+    background-image: linear-gradient(180deg, white, wheat);
+    text-align: center; 
+    /* box-shadow: 5px 5px 5px lightseagreen; */
+    padding: 10px 20px; 
+    transition: transform 0.2s;
+  }
+
+  .regstrn_box h1{
+    padding-top: 0.5rem;
+    font-weight: bold;
+    color: green;
+    /* text-shadow:1px 1px 1px green; */
+    font-size: 30px;
+    font-weight: 800;
+   
+  }
+
+  label { 
+    display: block; 
+    width: 100%; 
+    margin-top: 10px; 
+    margin-bottom: 5px; 
+    margin-left: 35px;
+    text-align: justify; 
+    color: black; 
+    font-weight: bold; 
+} 
+  
+#message { 
+    color: red; 
+    font-size: 12px; 
+} 

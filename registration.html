@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"  rel="stylesheet"/>
+	<link rel="shortcut icon" href="requirements/booklogo.png" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<title> Register | PustakAlay </title>
+</head>
+<body>
+<header style="height: 80px;">
+    <div class="logo"><a href="index.html">
+        <h1 style="font-size: 60px;">PustakAlay</h1>
+        </a>
+    </div>
+    <nav>
+        <div class="nav_bar" style="padding: 0.5rem 1rem;">
+            <ul class="nav_links">
+                <li class="link"><a href="index.html">HOME <i class="ri-home-smile-fill"></i></a></li>
+                <li class="link"><a href="books.html">BOOKS <i class="ri-book-open-fill"></i></a></li>
+                <li class="link"><a href="login.html">LOGIN <i class="ri-login-box-fill"></i></i></a></li>
+                <li class="link"><a href="contactus.html">TALK TO US <i class="ri-customer-service-2-fill"></i></a></li>
+                <li class="link"><a href="feedback.php">FEEDBACK <i class="ri-shake-hands-fill"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section style="height:798px;" onload="load();">
+    <div class="regstrn_img">
+     <br>
+        <div class="regstrn_box">
+          <h1>REGISTER</h1>
+          <form action="" name="regstrn" method="">
+            <label for="firstname">First Name</label>
+             <input type="text" id="firstname" name="firstname" 
+             placeholder="Enter First Name" required="" style="width: 500px;">
+
+            <!-- <label for="middlename">Middle Name</label>
+            <input type="text" id="middlename" name="middlename" 
+            placeholder="Enter Middle Name" style="width: 500px;">  -->
+
+            <label for="lastname">Last Name</label>
+             <input type="text" id="lastname" name="lastname"
+              placeholder="Enter Last Name" required="" style="width: 500px;">
+
+            <label for="username">Set User Name</label>
+             <input type="number/text" id="user_name" name="user_name" 
+             placeholder="Enter UserName" required="" onblur="return validUserName();" style="width: 500px;">
+
+             <label for="email">Email</label>
+             <input type="email" id="email" name="email" 
+             placeholder="Enter Email" required="" style="width: 500px;">
+
+             <label for="phonenumber">Contact No.</label>
+             <input type="tel" id="phonenumber" name="phonenumber" pattern="[0-9]{10}"
+             placeholder="Enter Contact No." required="" maxlength="10" style="width: 500px;">
+
+             <label for="address">Address</label>
+             <input type="text" id="address" name="address" 
+             placeholder="Enter Address" required="" style="width: 500px;">
+
+             <label for="password">Set Password</label>
+             <input type="password" id="password" name="password" 
+             placeholder="Enter Password" pattern=" /(?=.*[\d])(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*])[\w!@#$%^&*]{8,}$/" 
+             required="" title="Password must contain at least one number, one alphabet, one symbol, and be at  
+             least 8 characters long" onblur="return validPassword();" style="width: 500px;"> 
+
+             <label for="repassword">Re-Type Password</label>
+             <input type="password" id="repassword" name="repassword" 
+             placeholder="Confirm Password" required="" onblur="return cnfrmPass();" style="width: 500px;">
+             <span id="message"></span>
+             <br>
+             <br>
+             <button type="submit" id="register" onclick="goto();">Register</button>  
+             <p>
+             
+              <a href="login.html">Already Registered?</a>
+             </p>
+          </form>
+        </div>
+      </div>
+</section>
+
+<footer style="height: 50px;">
+    <div class="footer__container">
+        <!-- <a href="index.html"><h4>PustakAlay <i class="ri-book-open-fill"></i></h4></a> -->
+        <!-- <div class="footer__socials">
+          <span>
+            <a href="mailto:pustakkalayy@gmail.com"><i class="ri-mail-fill"></i></a>
+          </span>
+          <span>
+            <a href="twitter.html"><i class="ri-twitter-fill"></i></a>
+          </span>
+          <span>
+            <a href="https://www.linkedin.com/in/samikhya-mishra54"><i class="ri-linkedin-fill"></i></a>
+          </span>
+        </div>
+        <ul class="footer__nav">
+          <li class="footer__link"><a href="index.html">HOME</a></li>
+          <li class="footer__link"><a href="about.html">ABOUT US</a></li>
+          <li class="footer__link"><a href="career.html">CAREER</a></li>
+          <li class="footer__link"><a href="contactus.html">TALK TO US</a></li>
+        </ul> -->
+      <div class="footer__bar">
+        <p> Copyright &copy;  2024 PustakAlay_ORSAC. All rights are reserved.</p>
+        <p><a href="aboutprivacy.html">Privacy Policy</a></p>
+      </div>
+</footer>
+<script src="registration.js"></script>
+</body>
+</html>

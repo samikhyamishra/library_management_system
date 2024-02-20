@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"  rel="stylesheet"/>
+	<link rel="shortcut icon" href="requirements/booklogo.png" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<title> Login | PustakAlay </title>
+  <script src="login.js"></script>
+</head>
+<body>
+<header>
+    <div class="logo"><a href="index.html">
+        <h1>PustakAlay</h1>
+        </a>
+    </div>
+    <nav>
+        <div class="nav_bar">
+            <ul class="nav_links">
+                <li class="link"><a href="index.html">HOME <i class="ri-home-smile-fill"></i></a></li>
+                <li class="link"><a href="books.html">BOOKS <i class="ri-book-open-fill"></i></a></li>
+                <!-- <li class="link"><a href="login.html">LOGIN <i class="ri-login-box-fill"></i></i></a></li> -->
+                <li class="link"><a href="contactus.html">TALK TO US <i class="ri-customer-service-2-fill"></i></a></li>
+                <li class="link"><a href="feedback.php">FEEDBACK <i class="ri-shake-hands-fill"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<section onload="load();">
+    <div class="log_img">
+      <br><br><br>
+      <div class="login_box">
+        <h1>LOGIN</h1>
+        <br>
+        <br>
+        <form action="" name="login" method="">
+           <input type="number/text" id="user_name/user_login_id" name="user_name/user_login_id" placeholder="UserName/Login Id Here" required=""><br><br>
+           <input type="password" name="password" placeholder="Password Here" required="" onblur="return validForm();"><br><br>
+           
+           <p style="color: black;">-------------------OR------------------</p>
+           <br>
+           <span id="message"></span>
+           <button type="button" id="login" onclick="goto();">Login</button>
+           <p>
+            <br>
+            <a href="">Forgot Password?</a><br><br>
+            <a href="registration.html">New User?</a>
+           </p>
+        </form>
+      </div>
+    </div>
+</section>
+<footer>
+    <div class="footer__container">
+        <!-- <a href="index.html"><h4>PustakAlay <i class="ri-book-open-fill"></i></h4></a> -->
+        <div class="footer__socials">
+          <span>
+            <a href="mailto:pustakkalayy@gmail.com"><i class="ri-mail-fill"></i></a>
+          </span>
+          <span>
+            <a href="twitter.html"><i class="ri-twitter-fill"></i></a>
+          </span>
+          <span>
+            <a href="https://www.linkedin.com/in/samikhya-mishra54"><i class="ri-linkedin-fill"></i></a>
+          </span>
+        </div>
+        <!-- <ul class="footer__nav">
+          <li class="footer__link"><a href="index.html">HOME</a></li>
+          <li class="footer__link"><a href="about.html">ABOUT US</a></li>
+          <li class="footer__link"><a href="career.html">CAREER</a></li>
+          <li class="footer__link"><a href="contactus.html">TALK TO US</a></li>
+        </ul> -->
+      <div class="footer__bar">
+        <p> Copyright &copy; 2024 PustakAlay_ORSAC. All rights are reserved.</p>
+        <br>
+        <p><a href="aboutprivacy.html">Privacy Policy</a></p>
+      </div>
+</footer>
+</body>
+</html>
