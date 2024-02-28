@@ -2,6 +2,7 @@ function load () {
     wrong();
     document.getElementById( "firstname" ).focus();
 }
+
 function wrong () {
     document.getElementById( "register" ).disabled = true;
     document.getElementById( "register" ).style.opacity = "0.5";
@@ -9,16 +10,19 @@ function wrong () {
     // document.getElementById( "tnc" ).checked = false;
 
 }
+
 function right () {
     document.getElementById( "message" ).innerHTML = "";
 }
+
 function validUserName () {
-    var username = document.getElementById( "username" ).value;
+    var username = document.getElementById( "user_name" ).value;
     if ( /\s/.test( username )==true )
     {
         wrong();
         document.getElementById( "message" ).innerHTML = "User name must not contain any space.";
-        document.getElementById( "username" ).focus();
+        document.getElementById( "user_name" ).focus();
+        document.getElementById( "user_name" ).style.border = "2px solid red";
         return false;
     }
     else
@@ -107,6 +111,6 @@ function cnfrmPass () {
 // }
 function goto () {
     document.getElementById( "register" ).style.borderStyle = "inset";
-    window.location.replace( "index.html" );
+    window.location.replace( "login.html" );
     return true;
 }

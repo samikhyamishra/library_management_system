@@ -8,7 +8,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://unpkg.com/scrollreveal"></script>
 	<title> Login | PustakAlay </title>
-  <script src="login.js"></script>
 </head>
 <body>
 <header>
@@ -28,6 +27,7 @@
         </div>
     </nav>
 </header>
+
 <section onload="load();">
     <div class="log_img">
       <br><br><br>
@@ -36,8 +36,8 @@
         <br>
         <br>
         <form action="" name="login" method="">
-           <input type="number/text" id="user_name/user_login_id" name="user_name/user_login_id" placeholder="UserName/Login Id Here" required=""><br><br>
-           <input type="password" name="password" placeholder="Password Here" required="" onblur="return validForm();"><br><br>
+           <input type="text" id="user_name" name="user_name/user_login_id" placeholder="UserName/Login Id Here" required="" onblur="return validForm();"><br><br>
+           <input type="password"id="password" name="password" placeholder="Password Here" required="" onblur="return validForm();"><br><br>
            
            <p style="color: black;">-------------------OR------------------</p>
            <br>
@@ -77,6 +77,8 @@
         <br>
         <p><a href="aboutprivacy.html">Privacy Policy</a></p>
       </div>
+    </div>
 </footer>
+<script src="login.js"></script>
 </body>
 </html>

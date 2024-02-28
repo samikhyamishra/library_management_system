@@ -1,0 +1,13 @@
+<hibernatetool>
+
+    <!-- Database connection properties -->
+    <jdbcconfiguration
+            configurationfile="${basedir}/src/main/resources/application.properties"/>
+
+    <!-- Output file for generated SQL -->
+    <hbm2ddl
+            create="true"
+            outputfilename="${schema-export.sql}"
+            format="true"/>
+
+</hibernatetool>

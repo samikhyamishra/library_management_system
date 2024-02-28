@@ -1,30 +1,30 @@
 function load () {
     wrong();
-    document.getElementById( "user_name/user_login_id" ).value = "";
+    document.getElementById( "user_name" ).focus();
     
 }
 
 function wrong () {
     document.getElementById( "login" ).disabled = true;
-    document.getElementById( "user_name/user_login_id" ).focus();
+    // document.getElementById( "user_name" ).focus();
     document.getElementById( "login" ).style.opacity = "0.5";
 }
 function validForm () {
-    var username = document.getElementById( "user_name/user_login_id" ).value;
+    var username = document.getElementById( "user_name" ).value;
     var pass = document.getElementById( "password" ).value;
 
         if ( /\s/.test( username ) == true )
         {
-            document.getElementById( "message" ).innerHTML = "Please enter a valid User Name.";
             wrong();
+            document.getElementById( "message" ).innerHTML = "Please enter a valid User Name.";
             return false;
         }
         else
         {
             if ( pass.length < 8 )
             {
-                document.getElementById( "message" ).innerHTML = "Password must contain more than 8 charcaters.";
                 wrong();
+                document.getElementById( "message" ).innerHTML = "Password must contain more than 8 charcaters.";
                 return false;
             }
             else if ( pass.length >= 8 )
