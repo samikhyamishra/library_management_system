@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"  rel="stylesheet"/>
+    <link rel="shortcut icon" href="requirements/booklogo.png" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>DashBoard | PustakAlay </title>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="logo"><a href="index.html"><h1>PustakAlay</h1></a></div>
+        <nav>
+            <div class="nav_bar">
+                <ul class="nav_links">
+                    <li class="link"><a href="index.html">HOME <i class="ri-home-smile-fill"></i></a></li>
+                    <li class="link"><a href="dashboard.html">Dashboard <i class="ri-dashboard-fill"></i></a></li>
+                    <li class="link" ><a href="profile.html">My Profile<i class="ri-user-fill"></i></a></li>
+                    <li class="link" id="logoutbtn"><a href="#"><i class="ri-logout-circle-r-line"></i></a></li>
+                    <li class="link" id="openContactModal"><a href="#"><i class="ri-customer-service-2-fill"></i></a></li>
+                    <!--					<li class="link"><a href="feedback">FEEDBACK <i class="ri-shake-hands-fill"></i></a></li>-->
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="sec_img">
+            <br>
+            <br>
+            <br>
+            <div id="dashboardSection" class="chart-section">
+                <!-- Placeholder for dynamic content -->
+                <!-- Placeholder for charts -->
+                <div class="chart-container" style="height: 350px; width: 350px;">
+                    <canvas id="genresChart" class="chart"></canvas>
+                </div>
+                <div class="chart-container" style="height: 350px; width: 350px;">
+                    <canvas id="issuedBooksChart" class="chart"></canvas>
+                </div>
+                <div class="chart-container" style="height: 350px; width: 350px;">
+                    <canvas id="authorChart" class="chart"></canvas>
+                </div>
+            </div>
+            <div id="dashboard-menu">
+                <div class="menu" id="manageBooks" class="menu-panel">
+                    <button>Manage Books<i class="ri-arrow-down-s-line"></i></button>
+                    <div class="submenu" id="manageBooksDropdown">
+                        <a href="books.html">View Book List</a>
+                        <a href="managebooks.html">Book Management</a>
+                    </div>
+                </div>
+                <div class="menu" id="manageAuthors">
+                    <button>Manage Authors<i class="ri-arrow-down-s-line"></i></button>
+                    <div class="submenu" id="manageAuthorsDropdown">
+                        <a href="viewauthor.html">View Author List</a>
+                        <a href="author.html">Author Management</a>
+                    </div>
+                </div>
+                <div class="menu" id="manageGenres">
+                    <button>Manage Genres<i class="ri-arrow-down-s-line"></i></button>
+                    <div class="submenu" id="manageGenresDropdown">
+                        <a href="viewgenre.html">View Genre List</a>
+                        <a href="genre.html">Genre Management</a>
+                    </div>
+                </div>
+                <div class="menu" id="borrowedBooks">
+                    <button>Borrowed Book List<i class="ri-arrow-down-s-line"></i></button>
+                    <div class="submenu" id="borrowedBooksDropdown">
+                        <a href="userborrowed.html">Borrowed Book List</a>
+                        <a href="manageborrowed.html">Manage Borrowed List</a>
+                    </div>
+                </div>
+                <div class="menu" id="manageInventory">
+                    <button>Manage Book Inventory<i class="ri-arrow-down-s-line"></i></button>
+                    <div class="submenu" id="manageInventoryDropdown">
+                        <a href="manageInventory.html">Inventory Management</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Content will be dynamically rendered here -->
+
+            <!-- Contact Us Modal -->
+            <div id="contactModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="contact-info">
+                        <br><br><br>
+                        <h1>Contact Details</h1><br><br>
+                        <p><i class="ri-mail-fill"></i> Email:<a href="mailto:pustakkalayy@gmail.com"> pustakkalayy@gmail.com</a></p><br><br>
+                        <p><i class="ri-phone-fill"></i> Phone:<a href="#"> +1234567890</a></p><br><br>
+                        <p><i class="ri-map-pin-2-fill"></i> Address:<a href="#">Bhubaneswar</a></p><br><br>
+                    </div>
+                    <div class="contact-form">
+                        <h1>Contact Us</h1>
+                        <form id="contactForm">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required><br><br>
+
+                            <label for="phone">Phone Number:</label>
+                            <input type="text" id="phone" name="phone" required><br><br>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required><br><br>
+
+                            <label for="messages">Message:</label><br>
+                            <textarea id="messages" name="message" rows="4" required></textarea><br><br>
+                            <button type="submit" class="modal" id="submitModal" >Submit</button>
+                            <!-- <button type="submit" class="modal">Submit</button> -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <br>
+    <br>
+    <br>
+    <br> -->
+    <footer id="footer">
+
+    </footer>
+</div>
+<script src="dashboard.js"></script>
+</body>
+
+</html>

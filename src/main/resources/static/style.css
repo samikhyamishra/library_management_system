@@ -112,7 +112,6 @@ body {     /* styling the body */
     font-family: "Inconsolata", monospace;
     font-size: larger;
     font-weight: 700;
-    color: white;
     background-color: rgb(216, 216, 216);
   }
 
@@ -133,7 +132,8 @@ body {     /* styling the body */
 section{
     height: 658px;
     width: 1858px;
-    background-image:url("requirements/sectionimg.jpg"); ;
+    background-image:url("requirements/contact-background-1-1080x608.jpg");
+
 }
 
 footer{
@@ -304,6 +304,123 @@ nav{
     text-decoration: none;
     color: wheat;
   }
+
+  /* Modal Styles */
+  .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.4);
+  }
+
+  .modal-content {
+    background-image: linear-gradient(180deg, olive, white);
+    opacity: 1;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid yellow;
+      border-radius: 15px;
+      width: 80%;
+      max-width: 600px;
+      box-shadow: 4px 4px 8px olivedrab;
+      display: flex;
+  }
+
+  .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      align-self: flex-start; /* Align close button to the start */
+      margin-bottom: auto; /* Push close button to the bottom */
+      cursor: pointer;
+  }
+
+  .close:hover,
+  .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+  }
+
+  /* Contact Form Styling (customize as needed) */
+  .contact-info, .contact-form {
+    flex: 1; /* Make both sections take equal space */
+    padding: 10px;
+      /* width: 50%;
+      /* display: inline-block;
+      vertical-align: top; */ 
+  }
+
+  .contact-info{
+    padding-top: 80px;
+    border-right: 2px solid black;
+    /* box-shadow: #000;
+    border-radius: 15px; */
+  }
+  .contact-form {
+      padding-left: 20px;
+  }
+
+  .contact-info p{
+    color: black;
+    font-size: 20px;
+  }
+  .contact-info h1 {
+    font-size: 28px;
+    font-weight: bolder;
+    color: black;
+    margin-bottom: 10px;
+    /* text-decoration: underline; */
+}
+
+.contact-form h1{
+  font-size: 30px;
+    font-weight: bolder;
+    color: black;
+    margin-bottom: 10px;
+    /* text-decoration: underline; */
+}
+
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color:black;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  width: 100%;
+} 
+
+ .contact-form button:hover {
+  background-color: #45a049;
+}
  
   /* --------------------------LOGIN PAGE --------------------- */
 
@@ -410,3 +527,185 @@ nav{
     color: red; 
     font-size: 12px; 
 } 
+
+/*--------------INDEX PAGE ---------------------*/
+
+.container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.container h1{
+   color:white;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color:black;
+}
+
+table th {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    color:black;
+}
+tbody{
+  color:black;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+/* Main Dashboard Styles */
+.menu {
+        margin-bottom: 20px;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu button:hover {
+    background-color: #45a049;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menu:hover .submenu {
+    display: block;
+}
+
+.submenu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.submenu a:hover {
+    background-color: #ddd;
+}
+.menu-panel {
+    position: absolute;
+    top: 150px;
+    width: 200px;
+    height: 615px;
+    background-color: #21c684;
+    padding: 40px;
+}
+
+
+
+#dashboardSection {
+    position: absolute;
+    top: 100;
+    left: 220px; /* Adjust according to the menu width */
+    width: calc(100% - 220px);
+    height: 100%;
+    padding: 20px;
+    overflow-y: auto; /* Allow vertical scrolling if needed */
+}
+
+/* Example styles for chart container (you'll need to integrate a charting library like Chart.js) */
+.chart-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Additional styles for charts or statistics display */
+.chart {
+    width: 100%;
+    height: auto;
+}
+
+.chart-section {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    margin-left: 200px; /* Adjust based on menu panel width */
+    width: calc(100% - 200px);
+    height: 600;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.chart-container {
+    height: 300px;
+    width: 400px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.container{
+     background:white;
+    padding: 40px;
+    margin-top: 20px;
+    margin-left: 40px;
+     height: 550px;
+    width: 1000px;
+}
+
+/* profile html */
+.box #userProfile{
+     display: flex;
+     justify-content: center; /* Horizontally center align */
+     align-items: center; /* Vertically center align */
+     flex-direction: column; /* Align items in a column */
+}
+
+#userProfile {
+    text-align: center; /* Center-align text inside userProfile */
+    padding:50px;
+}
+
+
+/* resetpassword html */
+.rPContainer h1{
+   color:black;
+
+}
+.rPContainer{
+   padding: 40px;
+   margin-top: 20px;
+   margin-left: 40px;
+   height: 350px;
+   width: 350px;
+ }

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"  rel="stylesheet"/>
+    <link rel="shortcut icon" href="requirements/booklogo.png" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
+    <title> Manage Books | PustakAlay </title>
+</head>
+<body>
+<div class="wrapper">
+    <header id="header">
+        <div class="logo"><a href="index.html"><h1>PustakAlay</h1></a></div>
+        <nav>
+            <div class="nav_bar">
+                <ul class="nav_links">
+                    <li class="link"><a href="index.html">HOME <i class="ri-home-smile-fill"></i></a></li>
+                    <li class="link"><a href="dashboard.html">DASHBOARD <i class="ri-book-open-fill"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="sec_img">
+            <br>
+            <br>
+            <br>
+            <div class="container">
+                <h1>Book Inventory</h1>
+                <div class="inventory-table">
+                    <table id="inventoryTable">
+                        <thead>
+                        <tr>
+                            <th>Inventory ID</th>
+                            <th>Book ID</th>
+                            <th>No. of Copies</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <!-- Table content will be populated dynamically -->
+                        </tbody>
+                    </table>
+                    <button id="addInventoryBtn" onclick="openAddInventoryModal()">Add Inventory</button>
+                </div>
+            </div>
+            <!-- Modal for adding inventory -->
+            <div id="addInventoryModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeAddInventoryModal()">&times;</span>
+                    <h2>Add Inventory</h2>
+                    <form id="addInventoryForm">
+                        <label for="bookId">Book ID:</label>
+                        <input type="text" id="bookId" name="bookId" required><br><br>
+                        <label for="noOfCopies">No. of Copies:</label>
+                        <input type="text" id="noOfCopies" name="noOfCopies" required><br><br>
+                        <button type="button" onclick="addInventory()">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <br>
+    <br>
+    <br>
+    <br> -->
+    <footer id="footer">
+
+    </footer>
+</div>
+
+<div id="addBookModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Add New Book</h2>
+        <form id="addBookForm">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required><br><br>
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required><br><br>
+            <label for="genre">Genre:</label>
+            <input type="text" id="genre" name="genre" required><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<div id="updateBookModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Add New Book</h2>
+        <form id="updateBookForm">
+            <label for="title">Title:</label>
+            <input type="text" id="updatedtitle" name="title" required><br><br>
+            <label for="author">Author:</label>
+            <input type="text" id="updatedauthor" name="author" required><br><br>
+            <label for="genre">Genre:</label>
+            <input type="text" id="updatedgenre" name="genre" required><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<script src="manageInventory.js"></script>
+</body>
+
+</html>

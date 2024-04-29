@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"  rel="stylesheet"/>
+    <link rel="shortcut icon" href="requirements/booklogo.png" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
+    <title> Manage Books | PustakAlay </title>
+</head>
+<body>
+<div class="wrapper">
+    <header id="header">
+        <div class="logo"><a href="index.html"><h1>PustakAlay</h1></a></div>
+        <nav>
+            <div class="nav_bar">
+                <ul class="nav_links">
+                    <li class="link"><a href="index.html">HOME <i class="ri-home-smile-fill"></i></a></li>
+                    <li class="link"><a href="dashboard.html">DASHBOARD <i class="ri-book-open-fill"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="sec_img">
+            <br>
+            <br>
+            <br>
+            <div class="container">
+                <h1>Author List</h1>
+                <button id="addAuthorBtn" class="add-btn">Add Author</button>
+                <table id="authorTable">
+                    <thead>
+                    <tr>
+                        <th>Author ID</th>
+                        <th>Author Name</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!-- Author data will be dynamically populated here -->
+                    </tbody>
+                </table>
+             </div>
+            </div>
+            <!-- Modal for adding inventory -->
+        <div id="addAuthorModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Add New Author</h2>
+                <form id="addAuthorForm">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required><br>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required><br>
+                    <button type="submit">Add Author</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- <br>
+    <br>
+    <br>
+    <br> -->
+    <footer id="footer">
+
+    </footer>
+</div>
+
+<script src="author.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"  rel="stylesheet"/>
+    <link rel="shortcut icon" href="requirements/booklogo.png" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Profile | PustakAlay </title>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="logo"><a href="index.html"><h1>PustakAlay</h1></a></div>
+        <nav>
+            <div class="nav_bar">
+                <ul class="nav_links">
+                    <li class="link"><a href="index.html">HOME <i class="ri-home-smile-fill"></i></a></li>
+                    <li class="link"><a href="dashboard.html">Dashboard <i class="ri-dashboard-fill"></i></a></li>
+                    <li class="link"><a href="#"><i class="ri-logout-circle-r-line"></i></a></li>
+                    <li class="link" id="openContactModal"><a href="#"><i class="ri-customer-service-2-fill"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="sec_img">
+            <br>
+            <br>
+            <br>
+            <div id="userProfile" class="box">
+                <!-- User profile details will be displayed here -->
+            </div>
+            <!-- Contact Us Modal -->
+            <div id="contactModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="contact-info">
+                        <br><br><br>
+                        <h1>Contact Details</h1><br><br>
+                        <p><i class="ri-mail-fill"></i> Email:<a href="mailto:pustakkalayy@gmail.com"> pustakkalayy@gmail.com</a></p><br><br>
+                        <p><i class="ri-phone-fill"></i> Phone:<a href="#"> +1234567890</a></p><br><br>
+                        <p><i class="ri-map-pin-2-fill"></i> Address:<a href="#">Bhubaneswar</a></p><br><br>
+                    </div>
+                    <div class="contact-form">
+                        <h1>Contact Us</h1>
+                        <form id="contactForm">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required><br><br>
+
+                            <label for="phone">Phone Number:</label>
+                            <input type="text" id="phone" name="phone" required><br><br>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required><br><br>
+
+                            <label for="messages">Message:</label><br>
+                            <textarea id="messages" name="message" rows="4" required></textarea><br><br>
+                            <button type="submit" class="modal" id="submitModal" >Submit</button>
+                            <!-- <button type="submit" class="modal">Submit</button> -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer__container">
+            <!-- <a href="index.html"><h4>PustakAlay <i class="ri-book-open-fill"></i></h4></a> -->
+            <div class="footer__socials">
+				  <span>
+					<a href="mailto:pustakkalayy@gmail.com"><i class="ri-mail-fill"></i></a>
+				  </span>
+                <span>
+					<a href="twitter.html"><i class="ri-twitter-fill"></i></a>
+				  </span>
+                <span>
+					<a href="https://www.linkedin.com/in/samikhya-mishra54"><i class="ri-linkedin-fill"></i></a>
+				  </span>
+            </div>
+            <ul class="footer__nav">
+                <li class="footer__link"><a href="index.html">HOME</a></li>
+                <li class="footer__link"><a href="about.html">ABOUT US</a></li>
+                <li class="footer__link"><a href="career.html">CAREER</a></li>
+                <li class="footer__link"><a href="#">TALK TO US</a></li>
+                <!-- <li class="footer__link"></li> -->
+            </ul>
+            <div class="footer__bar">
+                <p> Copyright &copy; 2024 PustakAlay_ORSAC. All rights are reserved.</p>
+                <p><a href="privacy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="profile.js"></script>
+</body>
+
+</html>

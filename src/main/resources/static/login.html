@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"  rel="stylesheet"/>
+    <link rel="shortcut icon" href="requirements/booklogo.png" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--   <&#45;&#45;! https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js &ndash;&gt;-->
+    <title> Login | PustakAlay </title>
+</head>
+<body>
+<header>
+    <div class="logo"><a href="index.html">
+        <h1>PustakAlay</h1>
+    </a>
+    </div>
+    <nav>
+        <div class="nav_bar">
+            <ul class="nav_links">
+                <li class="link"><a href="index.html">HOME <i class="ri-home-smile-fill"></i></a></li>
+                <li class="link" id="openContactModal"><a href="">TALK TO US <i class="ri-customer-service-2-fill"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section>
+    <div class="log_img">
+        <br><br><br>
+        <div class="login_box">
+            <h1>LOGIN</h1>
+            <br>
+            <br>
+            <form name="login" id="loginForm" >      <!-- action="javascript:void(0)" method="post"-->
+                <input type="text" id="user_name" name="user_name/user_login_id" placeholder="UserName/Login Id Here"><br><br>
+                <input type="password" id="password" name="password" placeholder="Password Here"><br><br>
+
+<!--                <p style="color: black;">-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;OR&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</p>-->
+<!--                <br>-->
+                <span id="message"></span>
+                <button type="submit" id="login" >Login</button>
+                <p>
+                    <br>
+                    <a href="" id="forgotPasswordLink">Forgot Password?</a><br><br>
+                    <a href="registration.html">New User?</a>
+                </p>
+            </form>
+               <!-- Contact Us Modal -->
+			<div id="contactModal" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<div class="contact-info">
+						<br><br><br>
+						<h1>Contact Details</h1><br><br>
+						<p><i class="ri-mail-fill"></i> Email:<a href="mailto:pustakkalayy@gmail.com"> pustakkalayy@gmail.com</a></p><br><br>
+						<p><i class="ri-phone-fill"></i> Phone:<a href="#"> +1234567890</a></p><br><br>
+						<p><i class="ri-map-pin-2-fill"></i> Address:<a href="#">Bhubaneswar</a></p><br><br>
+					</div>
+					<div class="contact-form">
+						<h1>Contact Us</h1>
+						<form id="contactForm">
+							<label for="name">Name:</label>
+							<input type="text" id="name" name="name" required><br><br>
+
+							<label for="phone">Phone Number:</label>
+							<input type="text" id="phone" name="phone" required><br><br>
+
+							<label for="email">Email:</label>
+							<input type="email" id="email" name="email" required><br><br>
+
+							<label for="messages">Message:</label><br>
+							<textarea id="messages" name="message" rows="4" required></textarea><br><br>
+							<button type="submit" class="modal" id="modal" >Submit</button>
+							<!-- <button type="submit" class="modal">Submit</button> -->
+						</form>
+					</div>
+				</div>
+			</div>
+        </div>
+              
+    </div>
+</section>
+<footer>
+    <div class="footer__container">
+        <!-- <a href="index.html"><h4>PustakAlay <i class="ri-book-open-fill"></i></h4></a> -->
+        <div class="footer__socials">
+          <span>
+            <a href="mailto:pustakkalayy@gmail.com"><i class="ri-mail-fill"></i></a>
+          </span>
+            <span>
+            <a href="twitter.html"><i class="ri-twitter-fill"></i></a>
+          </span>
+            <span>
+            <a href="https://www.linkedin.com/in/samikhya-mishra54"><i class="ri-linkedin-fill"></i></a>
+          </span>
+        </div>
+        <!-- <ul class="footer__nav">
+          <li class="footer__link"><a href="index.html">HOME</a></li>
+          <li class="footer__link"><a href="about.html">ABOUT US</a></li>
+          <li class="footer__link"><a href="career.html">CAREER</a></li>
+          <li class="footer__link"><a href="contactus.html">TALK TO US</a></li>
+        </ul> -->
+        <div class="footer__bar">
+            <p> Copyright &copy; 2024 PustakAlay_ORSAC. All rights are reserved.</p>
+            <br>
+            <p><a href="aboutprivacy.html">Privacy Policy</a></p>
+        </div>
+    </div>
+</footer>
+<script src="login.js"></script>
+<script src="modal.js"></script>
+</body>
+</html>
+

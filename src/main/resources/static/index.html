@@ -7,10 +7,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://unpkg.com/scrollreveal"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<title> PustakAlay </title>
 </head>
-
-
 <body>
 	<div class="wrapper">
 		<header>
@@ -19,10 +18,9 @@
 				<div class="nav_bar">
 					<ul class="nav_links">
 						<li class="link"><a href="index.html">HOME <i class="ri-home-smile-fill"></i></a></li>
-						<li class="link"><a href="books.html">BOOKS <i class="ri-book-open-fill"></i></a></li>
 						<li class="link"><a href="login.html">LOGIN <i class="ri-login-box-fill"></i></i></a></li>
-						<li class="link"><a href="contactus.html">TALK TO US <i class="ri-customer-service-2-fill"></i></a></li>
-						<li class="link"><a href="feedback.php">FEEDBACK <i class="ri-shake-hands-fill"></i></a></li>
+						<li class="link" id="openContactModal"><a href="#">TALK TO US <i class="ri-customer-service-2-fill"></i></a></li>
+<!--					<li class="link"><a href="feedback">FEEDBACK <i class="ri-shake-hands-fill"></i></a></li>-->
 					</ul>
 				</div>
 			</nav>
@@ -41,6 +39,37 @@
 				<br>
 				<h1>Closes at:09:00 pm </h1>
 				<br>
+			</div>
+			<!-- Contact Us Modal -->
+			<div id="contactModal" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<div class="contact-info">
+						<br><br><br>
+						<h1>Contact Details</h1><br><br>
+						<p><i class="ri-mail-fill"></i> Email:<a href="mailto:pustakkalayy@gmail.com"> pustakkalayy@gmail.com</a></p><br><br>
+						<p><i class="ri-phone-fill"></i> Phone:<a href="#"> +1234567890</a></p><br><br>
+						<p><i class="ri-map-pin-2-fill"></i> Address:<a href="#">Bhubaneswar</a></p><br><br>
+					</div>
+					<div class="contact-form">
+						<h1>Contact Us</h1>
+						<form id="contactForm">
+							<label for="name">Name:</label>
+							<input type="text" id="name" name="name" required><br><br>
+
+							<label for="phone">Phone Number:</label>
+							<input type="text" id="phone" name="phone" required><br><br>
+
+							<label for="email">Email:</label>
+							<input type="email" id="email" name="email" required><br><br>
+
+							<label for="messages">Message:</label><br>
+							<textarea id="messages" name="message" rows="4" required></textarea><br><br>
+							<button type="submit" class="modal" id="submitModal" >Submit</button>
+							<!-- <button type="submit" class="modal">Submit</button> -->
+						</form>
+					</div>
+				</div>
 			</div>
 		</div>
 	    </section> 
@@ -66,7 +95,7 @@
 				  <li class="footer__link"><a href="index.html">HOME</a></li>
 				  <li class="footer__link"><a href="about.html">ABOUT US</a></li>
 				  <li class="footer__link"><a href="career.html">CAREER</a></li>
-				  <li class="footer__link"><a href="contact_us.html">TALK TO US</a></li>
+				  <li class="footer__link"><a href="#">TALK TO US</a></li>
 				  <!-- <li class="footer__link"></li> -->
 				</ul>
 			  <div class="footer__bar">
@@ -76,6 +105,7 @@
 			</div>
 		    </footer>
 	</div>
+<script src="modal.js"></script>
 </body>
 
 </html>
